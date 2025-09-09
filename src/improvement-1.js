@@ -15,6 +15,11 @@
 //   return cnt;
 // }
 
-export default function countRsFromString(string = "") {
-  return string.split('').filter(character => character === "R").length
+// export default function countRsFromString(string = "") {
+//   return string.split('').filter(character => character === "R").length
+// }
+
+
+function filterFoodItems(items = []) {
+  return items.filter(item => item.type === "Food");
 }
