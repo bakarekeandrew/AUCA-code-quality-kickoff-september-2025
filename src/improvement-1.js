@@ -19,7 +19,14 @@
 //   return string.split('').filter(character => character === "R").length
 // }
 
-
-function filterFoodItems(items = []) {
-  return items.filter(item => item.type === "Food");
+export default function howManyRsInString(string = "") {
+  let count = 0;
+  for (const char of string) {
+    if (char === "R"){
+       count++;
+    } 
+  }
+  return count;
 }
+
+
